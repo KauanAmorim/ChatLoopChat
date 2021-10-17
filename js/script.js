@@ -58,8 +58,8 @@ request.open("GET", url, true);
           sendMessage(mensagem.texto);
         });
       }
-  }
-  request.send();
+    }
+    request.send();
   });
   
 }.call(this));
