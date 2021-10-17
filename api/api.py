@@ -49,12 +49,12 @@ dados = {
 
 @app.route("/mensagem")
 def get_alunos():
-    return jsonify(dados["mensagem"])
+    return jsonify(dados["mensagem"]), 200
 
 
 @app.route("/usuarios")
 def listar_usuarios():
-    return jsonify(dados["usuarios"])
+    return jsonify(dados["usuarios"]), 200
 
 
 @app.route("/usuarios", methods=["POST"])
